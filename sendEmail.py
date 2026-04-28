@@ -16,10 +16,10 @@ def sendEmail(license_quantity, code) :
                 RECEIVERMAIL = receiver_email["EMAIL"]
 
     if code == 404 :
-        message = "No se pudo iniciar sesion a PayTrigger, en 1 hora se intentara nuevamente."
-        subject = "No se pudo iniciar sesion en PayTrigger."
+        message = "No se pudo iniciar sesion a WEBSITE, en 1 hora se intentara nuevamente."
+        subject = "No se pudo iniciar sesion en WEBSITE."
     elif code == None :
-        message = f"Las licencias de PayTrigger estan a punto de agotar. Cantidad restante de licencias: {license_quantity}"
+        message = f"Las licencias de WEBSITE estan a punto de agotar. Cantidad restante de licencias: {license_quantity}"
         subject = "Licencias PayTrigger estan a punto de agotar"
 
     email_body = f"Subject: {subject}\n\n{message}"
